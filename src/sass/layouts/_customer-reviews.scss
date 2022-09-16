@@ -1,9 +1,14 @@
+.costumer-reviews-container {
+  display: flex;
+  flex-direction: column;
+}
 .costumer-reviews-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 14px;
 }
 .costumer-reviews-photo {
   width: auto;
@@ -35,4 +40,21 @@
   text-align: center;
 
   color: #131313;
+}
+
+.reviews-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #84a178;
+  }
+}
+.costumer-reviews-buttons {
+  display: flex;
+  gap: 18px;
+  margin: 0 auto;
 }
