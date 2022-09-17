@@ -27,9 +27,12 @@
     <symbol id="icon-burger" viewBox="0 0 32 32">
       <path d="M6 10h20M6 16h20M6 22h20"/>
     </symbol>
+<<<<<<< Updated upstream
     <symbol id="icon-btn-arrow" viewBox="0 0 32 32">
       <path d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
     </symbol>
+=======
+>>>>>>> Stashed changes
     <symbol id="icon-arrow-focus" viewBox="0 0 69 32">
       <path d="M68.08 17.413c.361-.362.585-.861.585-1.413s-.224-1.052-.585-1.413L55.353 1.858a2.001 2.001 0 0 0-2.83 2.83l11.316 11.313-11.315 11.313a2.001 2.001 0 0 0 2.83 2.83l12.728-12.728zM0 18h66.667v-4H0v4z"/>
     </symbol>
