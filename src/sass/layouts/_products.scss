@@ -30,6 +30,7 @@
 
 .products-list {
 }
+
 .products-card {
   min-width: 280px;
   min-height: auto;
@@ -37,6 +38,14 @@
   border-radius: 24px;
   padding: 0 26px;
   text-align: center;
+}
+
+.coffee {
+  background-color: #efd478;
+}
+
+.milkshakes {
+  background-color: #d6936d;
 }
 .products-card + .products-card {
   margin-top: 56px;
