@@ -1,12 +1,35 @@
 <section class="section product">
-  <div class="container">
+  <div class="container product-container">
     <p class="natural">100% natural</p>
     <h2 class="sup-title">products</h2>
     <ul class="product-list">
       <li class="product-card">
-        <div class="circle"></div>
+        <div class="circle ice-cream"></div>
         <div class="product-image">
-          <!-- <img src="" alt="" class="image__circle" /> -->
+          <picture class="">
+            <source
+              srcset="
+                ./images/products-new/ice/ice-desk@1x.png 1x,
+                ./images/products-new/ice/ice-desk@2x.png 2x
+              "
+              media="(min-width:1200px)" />
+            <source
+              srcset="
+                ./images/products-new/ice/ice-tab@1x.png 1x,
+                ./images/products-new/ice/ice-tab@2x.png 2x
+              "
+              media="(min-width:768px)" />
+            <source
+              srcset="
+                ./images/products-new/ice/ice-mob@1x.png 1x,
+                ./images/products-new/ice/ice-mob@2x.png 2x
+              "
+              media="(max-width:767px)" />
+            <img
+              src="./images/products-new/ice/ice-desk@1x.png"
+              alt="ice-cream"
+              width="300"
+          /></picture>
         </div>
         <h3 class="card__name">Ice Cream</h3>
         <p class="card__desc">
@@ -20,10 +43,8 @@
         </button>
       </li>
       <li class="product-card coffee">
-        <div class="circle"></div>
-        <div class="product-image">
-          <!-- <img src="" alt="" class="image__circle" /> -->
-        </div>
+        <div class="circle coffee"></div>
+        <div class="product-image"></div>
         <h3 class="card__name">Ice Coffee</h3>
         <p class="card__desc">
           Fragrant invigorating drink created from 100% natural ingredients
@@ -36,7 +57,7 @@
         </button>
       </li>
       <li class="product-card milkshakes">
-        <div class="circle"></div>
+        <div class="circle milkshakes"></div>
         <div class="product-image">
           <!-- <img src="" alt="" class="image__circle" /> -->
         </div>
