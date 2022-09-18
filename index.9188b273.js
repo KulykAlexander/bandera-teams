@@ -1,2 +1,0 @@
-(()=>{const e={openMenuBtn:document.querySelector("[data-menu-open]"),closeMenuBtn:document.querySelector("[data-menu-close]"),menu:document.querySelector("[data-menu]"),body:document.querySelector("body")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)})(),$(".kickstart-list").slick({infinite:!0,slidesToShow:1,slidesToScroll:3,dots:!0,nextArrow:".our-next-btn",arrows:!0,prevArrow:".our-prev-btn"});
-//# sourceMappingURL=index.9188b273.js.map
