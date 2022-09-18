@@ -10,18 +10,18 @@
   background-repeat: repeat;
 }
 
-.product-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-}
+// .product-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-items: center;
+// }
 .natural {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   text-align: center;
   text-transform: uppercase;
   color: #131313;
@@ -33,22 +33,24 @@
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 1.27;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #131313;
   margin-bottom: 150px;
-  width: 100%;
   text-align: center;
 }
 
 .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 
 .product-card {
-  // display: flex;
-  // flex-direction: column;
   width: 280px;
   height: auto;
   background-color: #aec6a5;
@@ -116,7 +118,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.22;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -128,7 +130,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 176%;
+  line-height: 1.78;
 
   text-align: center;
   letter-spacing: 0.04em;
