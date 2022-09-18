@@ -1,0 +1,108 @@
+.product {
+  // min-width: 248px;
+}
+
+.natural {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.sup-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #131313;
+  text-align: center;
+  width: auto;
+}
+
+.product-list {
+}
+
+.product-card {
+  min-width: 280px;
+  min-height: auto;
+  background-color: #aec6a5;
+  border-radius: 24px;
+  padding: 0 26px;
+  text-align: center;
+}
+
+.coffee {
+  background-color: #efd478;
+}
+
+.milkshakes {
+  background-color: #d6936d;
+}
+.product-card + .product-card {
+  margin-top: 56px;
+}
+
+// @media screen and (max-width: 767px) {
+//   .product-card {
+//     width: 100%;
+//   }
+//   .product-card:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+// }
+.card__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 40px;
+}
+.card__desc {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+  margin-bottom: 90px;
+}
+
+.card__btn {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.btn__icon {
+  fill: #131313;
+
+  .card__btn:hover & {
+    width: 50px;
+    stroke-width: 2px solid #131313;
+  }
+
+  .card__btn:focus & {
+    width: 50px;
+    stroke-width: 3px solid #131313;
+  }
+}
