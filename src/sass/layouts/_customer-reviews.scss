@@ -1,9 +1,31 @@
+.costumer-reviews-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 186px;
+  padding-bottom: 774px;
+  background-image: url(../images/reviewers/ice-cream-bg-1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/reviewers/ice-cream-bg-2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 223px;
+    padding-bottom: 383px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 456px;
+    padding-bottom: 207px;
+  }
+}
 .costumer-reviews-list {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 14px;
 }
 .costumer-reviews-photo {
   width: auto;
@@ -24,8 +46,18 @@
   border-radius: 10px;
 
   padding: 34px 39px;
-  max-width: 280px;
+  min-width: 280px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 705px;
+    padding: 29px 80px;
+    margin-bottom: 32px;
+    border-radius: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    padding: 39px 74px;
+  }
 }
 .costumer-reviews-names {
   font-weight: 500;
@@ -35,4 +67,21 @@
   text-align: center;
 
   color: #131313;
+}
+
+.reviews-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #84a178;
+  }
+}
+.costumer-reviews-buttons {
+  display: flex;
+  gap: 18px;
+  margin: 0 auto;
 }
