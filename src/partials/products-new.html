@@ -42,9 +42,36 @@
           </svg>
         </button>
       </li>
+
       <li class="product-card coffee">
         <div class="circle coffee"></div>
-        <div class="product-image"></div>
+        <div class="product-image">
+          <picture class="">
+            <source
+              srcset="
+                ./images/products-new/coffee/coffee-desk@1x.png 1x,
+                ./images/products-new/coffee/coffee-desk@2x.png 2x
+              "
+              media="(min-width:1200px)" />
+            <source
+              srcset="
+                ./images/products-new/coffee/coffee-tab@1x.png 1x,
+                ./images/products-new/coffee/coffee-tab@2x.png 2x
+              "
+              media="(min-width:768px)" />
+            <source
+              srcset="
+                ./images/products-new/coffee/coffee-mob@1x.png 1x,
+                ./images/products-new/coffee/coffee-mob@2x.png 2x
+              "
+              media="(max-width:767px)" />
+            <img
+              src="./images/products-new/coffee/coffee-desk@1x.png"
+              alt="ice-coffee"
+              width="300"
+          /></picture>
+        </div>
+
         <h3 class="card__name">Ice Coffee</h3>
         <p class="card__desc">
           Fragrant invigorating drink created from 100% natural ingredients
@@ -59,7 +86,30 @@
       <li class="product-card milkshakes">
         <div class="circle milkshakes"></div>
         <div class="product-image">
-          <!-- <img src="" alt="" class="image__circle" /> -->
+          <picture class="">
+            <source
+              srcset="
+                ./images/products-new/milk/milk-desk@1x.png 1x,
+                ./images/products-new/milk/milk-desk@2x.png 2x
+              "
+              media="(min-width:1200px)" />
+            <source
+              srcset="
+                ./images/products-new/milk/milk-tab@1x.png 1x,
+                ./images/products-new/milk/milk-tab@2x.png 2x
+              "
+              media="(min-width:768px)" />
+            <source
+              srcset="
+                ./images/products-new/milk/milk-mob@1x.png 1x,
+                ./images/products-new/milk/milk-mob@2x.png 2x
+              "
+              media="(max-width:767px)" />
+            <img
+              src="./images/products-new/milk/milk-desk@1x.png"
+              alt="milkshake"
+              width="300"
+          /></picture>
         </div>
         <h3 class="card__name">milkshakes</h3>
         <p class="card__desc">
