@@ -16,6 +16,7 @@
 //   align-items: center;
 //   justify-items: center;
 // }
+
 .natural {
   font-family: 'Montserrat';
   font-style: normal;
@@ -27,6 +28,15 @@
   color: #131313;
   margin-bottom: 12px;
   text-align: center;
+
+  @include tablet {
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .sup-title {
@@ -40,6 +50,16 @@
   color: #131313;
   margin-bottom: 150px;
   text-align: center;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .product-list {
@@ -48,19 +68,32 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .product-card {
   width: 280px;
-  height: auto;
-  background-color: #aec6a5;
+  height: 420px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   border-radius: 24px;
-  padding: 125px 26px 0;
-  text-align: center;
+  padding-top: 123px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
 
+.product-card + .product-card {
+  margin-top: 160px;
+}
 .circle {
   height: 200px;
   width: 200px;
@@ -101,25 +134,13 @@
 .milkshakes {
   background-color: #d6936d;
 }
-.product-card + .product-card {
-  margin-top: 160px;
-}
 
-// @media screen and (max-width: 767px) {
-//   .product-card {
-//     width: 100%;
-//   }
-//   .product-card:not(:last-child) {
-//     margin-bottom: 30px;
-//   }
-// }
 .card__name {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.22;
-  text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
@@ -131,20 +152,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.78;
-
   text-align: center;
   letter-spacing: 0.04em;
 
   color: #131313;
-  margin-bottom: 90px;
+  margin-bottom: auto;
+  overflow-x: scroll;
 }
 
 .card__btn {
+  width: 40px;
   background-color: transparent;
   border: none;
-  height: 100%;
-  padding-bottom: 20px;
   cursor: pointer;
+  padding: 0;
+  line-height: 0;
 }
 
 .btn__icon {
@@ -159,4 +181,13 @@
     width: 50px;
     stroke-width: 3px solid #131313;
   }
+}
+
+@media screen and (max-width: 767px) {
+  // .product-card {
+  //   width: 100%;
+  // }
+  // .product-card:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 }
