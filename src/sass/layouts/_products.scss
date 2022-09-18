@@ -1,4 +1,4 @@
-.products {
+.product {
   // min-width: 248px;
 }
 
@@ -28,10 +28,10 @@
   width: auto;
 }
 
-.products-list {
+.product-list {
 }
 
-.products-card {
+.product-card {
   min-width: 280px;
   min-height: auto;
   background-color: #aec6a5;
@@ -47,15 +47,15 @@
 .milkshakes {
   background-color: #d6936d;
 }
-.products-card + .products-card {
+.product-card + .product-card {
   margin-top: 56px;
 }
 
 // @media screen and (max-width: 767px) {
-//   .products-card {
+//   .product-card {
 //     width: 100%;
 //   }
-//   .products-card:not(:last-child) {
+//   .product-card:not(:last-child) {
 //     margin-bottom: 30px;
 //   }
 // }
