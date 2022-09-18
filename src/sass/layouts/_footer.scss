@@ -1,0 +1,131 @@
+.footer {
+    background: #84A178; 
+    font-weight: 700;
+}
+.footer .container {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 234px;
+    padding-left: 20px;
+    }
+
+.footer-title-first {
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase; 
+
+    color: #FCFCFC;
+
+    margin-bottom: 16px; 
+}
+
+.footer-title-second {
+    font-size: 34px;
+    line-height: 1.21;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FCFCFC;
+
+    margin-bottom: 42px; 
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.footer-social-list {
+    list-style: none;
+
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-contact {
+    font-size: 12px;
+    line-height: 1.83;
+    text-align: right;
+
+    color: #131313;
+
+    margin-bottom: 40px;
+}
+
+.footer-contact-link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.83;
+    text-align: right;
+
+    color: #FCFCFC;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 1.5;   
+    width: 147px; 
+    color: #7A7A7A;   
+}
+
+.footer-down {
+    border-top: 1px solid #E1E1E1;
+    padding-top: 16px;
+    padding-bottom: 60px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+
+.footer-social-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    fill: #84A178;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+
+    &:hover {
+        fill: #FCFCFC;           
+    }
+
+    &:focus {
+        fill: #FCFCFC;
+        transform: scale(1.2);     
+    }
+}
+
+.footer-social-icon {
+    width: 32px;
+    height: 32px;
+    fill: #84A178;
+
+    transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: #FCFCFC;           
+    }
+
+    &:focus {
+        fill: #FCFCFC;
+        transform: scale(1.2);     
+    }  
+}
+
+     
+
