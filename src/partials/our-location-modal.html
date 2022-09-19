@@ -1,0 +1,47 @@
+<div class="backdrop is-hidden">
+  <div class="modal">
+    <button type="button" class="modal-close btn">
+      <svg class="close-icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="location-titel">Our Locations</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/location/map-tab.webp    1x,
+          ./images/location/map-tab-2x.webp 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/location/map-mob.webp    1x,
+          ./images/location/map-mob-2x.webp 2x
+        "
+        media="(max-width:767px)"
+      />
+      <source
+        srcset="
+          ./images/location/map-tab.jpg    1x,
+          ./images/location/map-tab-2x.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/location/map-mob.jpg    1x,
+          ./images/location/map-mob-2x.jpg 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        src="./images/location/map.jpg"
+        alt="Our locations"
+        width="448"
+        height="260"
+      />
+    </picture>
+    <button type="submit" class="location-btn btn">Open map</button>
+  </div>
+</div>

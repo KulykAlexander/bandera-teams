@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div class="backdrop is-hidden">
   <div class="modal">
     <button type="button" class="modal-close btn">
       <svg class="close-icon" width="16" height="16">
@@ -16,25 +16,53 @@
       information. We appreciate your patience.
     </p>
     <form class="franchise-form">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Name" required />
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone" placeholder="Phone" required />
-      <label for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Email"
-        required
-      />
-      <label for="comment">Comment</label>
-      <textarea
-        name="comment"
-        rows="5"
-        placeholder="Comment"
-        id="comment"
-      ></textarea>
+      <div class="franchise-form-field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+          pattern="[A-Za-z0-9]{3,}"
+          required
+        />
+      </div>
+      <div class="franchise-form-field">
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder=" "
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          minlength="13"
+          maxlength="13"
+          required
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder=" "
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label for="comment">Comment</label>
+        <textarea
+          name="comment"
+          rows="4"
+          placeholder=" "
+          id="comment"
+        ></textarea>
+      </div>
+
       <button type="submit" class="franchise-btn btn">Submit</button>
     </form>
   </div>
