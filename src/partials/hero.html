@@ -1,29 +1,111 @@
 <section class="hero-section">
   <div class="container hero-container">
-    <h1 class="hero__title">ice cream made with passion</h1>
-    <ul class="hero-points-list list">
-      <li class="hero-points-item">
-        <a class="hero-points-link link" href=""
-          >16 <span hero-points-text>cafes</span></a
-        >
-      </li>
-      <li class="hero-points-item">
-        <a class="hero-points-link link" href=""
-          >23 <span hero-points-text>food trucks</span></a
-        >
-      </li>
-    </ul>
+    <div class="hero-title-wrapper">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero-title-span">passion</span>
+      </h1>
+      <ul class="hero-points-list list">
+        <li class="hero-points-item">
+          <a class="hero-points-link link" href=""
+            >16 <span class="hero-points-text">cafes</span></a
+          >
+        </li>
+        <li class="hero-points-item">
+          <a class="hero-points-link link" href=""
+            >23 <span class="hero-points-text">food trucks</span></a
+          >
+        </li>
+      </ul>
+    </div>
     <ul class="hero-button-list list">
       <li class="hero-button-list__item">
-        <a href="" class="hero-button-list__link link">Products</a>
+        <a href="" class="hero-button-list__link1 link">Products</a>
       </li>
       <li class="hero-button-list__item">
-        <a href="" class="hero-button-list__link link">How it’s made?</a>
+        <a href="" class="hero-button-list__link2 link">How it’s made?</a>
       </li>
     </ul>
     <p class="hero-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et
     </p>
+    <svg class="hero-arrow-svg">
+      <use
+        href="./images/icons.svg#icon-Frame-57"
+        width="40px"
+        height="10px"
+      ></use>
+    </svg>
+    <picture class="hero-ice-cream">
+      <source
+        srcset="
+          ./images/hero/ice-cream-desctop.png    1x,
+          ./images/hero/ice-cream-desctop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/hero/ice-cream-tablet.png    1x,
+          ./images/hero/ice-cream-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <source
+        srcset="
+          ./images/hero/ice-cream-mobile.png   1x,
+          ./images/hero/ice-cream-mobile2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+      <img
+        class="ice-cream-img"
+        src="./images/hero/ice-cream-mobile.png"
+        alt="ice-cream"
+      />
+    </picture>
+
+    <picture class="hero-ice-cream-plate">
+      <source
+        srcset="
+          ./images/hero/ice-cream-plate-desctop.png    1x,
+          ./images/hero/ice-cream-plate-desctop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/hero/ice-cream-plate-tablet.png    1x,
+          ./images/hero/ice-cream-plate-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        src="./images/hero/ice-cream-plate-tablet.png"
+        alt="ice-cream-plate"
+        class="ice-cream-plate-img"
+      />
+    </picture>
+    <!--     <picture>
+      <source
+        media="(min-width:320px)"
+        srcset="
+          ./images/hero/Мороженое.jpg    1x,
+          ./images/hero/Мороженое@2x.jpg 2x
+        "
+        <img
+        width="100px"
+        height="100px"
+        class="team__image"
+        src="./images/hero/Мороженое.jpg"
+        alt="Сотрудник Игорь Демьяненко"
+      />
+    </picture> -->
   </div>
 </section>
