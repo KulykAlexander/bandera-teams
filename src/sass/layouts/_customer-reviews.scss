@@ -14,8 +14,8 @@
 .customer-reviews-container {
   display: flex;
   flex-direction: column;
-  padding-top: 186px;
-  padding-bottom: 774px;
+  // padding-top: 186px;
+  // padding-bottom: 774px;
 
   background-image: url(../images/reviewers/ice-cream-bg-1x.jpg);
   @media (min-device-pixel-ratio: 2),
@@ -24,14 +24,14 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/reviewers/ice-cream-bg-2x.jpg);
   }
-  @media screen and (min-width: 768px) {
-    padding-top: 223px;
-    padding-bottom: 383px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 456px;
-    padding-bottom: 207px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   // padding-top: 223px;
+  //   // padding-bottom: 383px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 456px;
+  //   padding-bottom: 207px;
+  // }
   background-repeat: no-repeat;
   background-size: cover;
 }
