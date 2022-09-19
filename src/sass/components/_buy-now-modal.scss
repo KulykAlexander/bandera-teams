@@ -16,34 +16,82 @@
     line-height: 1.4;
   }
 }
+.buy-now-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 124px;
+  @include tablet {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 110px;
+  }
+}
+.buy-now-item:not(:last-child) {
+  margin-bottom: 80px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
 .buy-now-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.buy-now-circus {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.buy-now-coffee {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.buy-now-milkshake {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 .buy-now-img {
-  & ::after {
-    content: ' ';
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    background-color: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
-  }
+  z-index: 2;
+  position: absolute;
+  bottom: 8px;
 }
 .buy-now-text {
-  // display: block;
+  display: block;
+  position: absolute;
+  top: 65px;
   width: 132px;
   height: 136px;
-  margin-top: 20px;
+  // margin-top: 20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
 
-  border: 2px solid #96af8c;
-  border-radius: 16px;
+  border-left: 2px solid #96af8c;
+  border-right: 2px solid #96af8c;
+  border-bottom: 2px solid #96af8c;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
 
   font-weight: 700;
   font-size: 16px;
@@ -54,6 +102,17 @@
   text-align: center;
 
   color: #131313;
+}
+.ice-coffee {
+  background: #efd478;
+  border-left: 2px solid #efd478;
+  border-right: 2px solid #efd478;
+  border-bottom: 2px solid #efd478;
+}
+.milkshake {
+  border-left: 2px solid #d6936d;
+  border-right: 2px solid #d6936d;
+  border-bottom: 2px solid #d6936d;
 }
 .buy-now-form {
   display: flex;
