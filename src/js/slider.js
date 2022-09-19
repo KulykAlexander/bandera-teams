@@ -1,32 +1,37 @@
-// $('.kickstart-list').slick({
-//   infinite: true,
-//   slidesToShow: 1,
-//   slidesToScroll: 3,
-//   dots: true,
-//   // autoplay: true,
-//   nextArrow: '.our-next-btn',
-//   arrows: true,
-//   prevArrow: '.our-prev-btn',
-// });
-
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+$('.customer-reviews-list').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  nextArrow: '.reviews-btn-next',
+  prevArrow: '.reviews-slide-pre',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
 });
