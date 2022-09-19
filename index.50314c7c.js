@@ -1,0 +1,2 @@
+$(".customer-reviews-list").slick({dots:!1,infinite:!0,speed:800,slidesToShow:1,slidesToScroll:1,autoplay:!0,nextArrow:".reviews-btn-next",prevArrow:".reviews-slide-pre",responsive:[{breakpoint:1200,settings:{slidesToShow:1,slidesToScroll:1,infinite:!0}},{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]});
+//# sourceMappingURL=index.50314c7c.js.map
