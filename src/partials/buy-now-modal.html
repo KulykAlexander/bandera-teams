@@ -1,0 +1,53 @@
+<div class="backdrop">
+  <div class="modal">
+    <button type="button" class="modal-close btn">
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-titel">Buy now</h2>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <form class="buy-now-form">
+      <div class="buy-now-form-field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+          pattern="[A-Za-z0-9]{3,}"
+          required
+        />
+      </div>
+      <div class="buy-now-form-field">
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder=" "
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          minlength="13"
+          maxlength="13"
+          required
+        />
+      </div>
+
+      <div class="buy-now-form-field">
+        <label for="comment">Comment</label>
+        <textarea
+          name="comment"
+          rows="4"
+          placeholder=" "
+          id="comment"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="buy-now-btn btn">Submit</button>
+    </form>
+  </div>
+</div>
