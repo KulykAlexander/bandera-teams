@@ -1,0 +1,98 @@
+<div class="backdrop">
+  <div class="modal">
+    <button type="button" class="modal-close btn">
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="ingredients-titel">Chololate icecream</h2>
+    <div class="ingredients-card">
+      <div class="ingredients-circus"></div>
+      <picture class="ingredients-img">
+        <source
+          srcset="
+            ./images/ingredients/ingredients.png    1x,
+            ./images/ingredients/ingredients-2x.png 2x
+          "
+        />
+        <img
+          src="./images/ingredients/ingredients.png"
+          alt="ice cream"
+          width="212"
+          height="141"
+        />
+      </picture>
+    </div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>Ingredients</h3>
+    <ul>
+      <li>
+        <p>Milk</p>
+        <p>100ml</p>
+      </li>
+      <li>
+        <p>Belgian chocolate</p>
+        <p>20g</p>
+      </li>
+      <li>
+        <p>Cream</p>
+        <p>150 ml</p>
+      </li>
+      <li>
+        <p>Cocoa powder</p>
+        <p>30g</p>
+      </li>
+      <li>
+        <p>Sugar</p>
+        <p>40g</p>
+      </li>
+      <li>
+        <p>Vanilla sugar</p>
+        <p>10g</p>
+      </li>
+    </ul>
+    <form class="ingredients-form">
+      <div class="ingredients-form-field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+          pattern="[A-Za-z0-9]{3,}"
+          required
+        />
+      </div>
+      <div class="ingredients-form-field">
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder=" "
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          minlength="13"
+          maxlength="13"
+          required
+        />
+      </div>
+
+      <div class="ingredients-form-field">
+        <label for="comment">Comment</label>
+        <textarea
+          name="comment"
+          rows="4"
+          placeholder=" "
+          id="comment"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="ingredients-btn btn">Submit</button>
+    </form>
+  </div>
+</div>
