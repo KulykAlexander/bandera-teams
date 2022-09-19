@@ -1,0 +1,215 @@
+.header .container {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 8px 16px;
+  }
+}
+.header-logo {
+  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+.header-svg-logo {
+  width: 40px;
+  height: 37px;
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 44px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+    height: 65px;
+  }
+}
+.header-navigation {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.header-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 27px;
+  }
+}
+.header-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fcfcfc;
+  transition: var(--cub);
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: #f8d24e;
+  }
+}
+.header-burger {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header-svg-burger {
+  fill: #fcfcfc;
+}
+.header-btn {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    background-color: #f8d24e;
+    cursor: pointer;
+    padding: 12px 34px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    transition-property: background-color, color;
+    transition: var(--cub);
+  }
+}
+.header-btn:hover {
+  background-color: #0a8817;
+}
+.header-btn:focus {
+  background-color: #0a8817;
+  color: var(--main-color);
+}
+.header-btn:focus .header-svg-buy {
+  fill: var(--main-color);
+}
+.header-svg-buy {
+  transition-property: fill;
+  transition: var(--cub);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  padding-top: 100px;
+  padding-bottom: 63px;
+  @media screen and (min-width: 768px) {
+    padding-top: 140px;
+  }
+}
+.menu-logo {
+  position: absolute;
+  top: 12px;
+  left: 31px;
+}
+.menu-svg-logo {
+  width: 40px;
+  height: 37px;
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 44px;
+  }
+}
+.menu-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-btn-close {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.menu-svg-close {
+  fill: var(--main-color);
+}
+.menu-navigation {
+  height: 100%;
+}
+.menu-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
+}
+.menu-link {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21;
+  transition-property: color;
+  transition: var(--cub);
+  &:hover,
+  &:focus {
+    color: #131313;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.22;
+  }
+}
+.menu-btn-buy {
+  margin: auto 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f8d24e;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  transition-property: background-color, color;
+  transition: var(--cub);
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: var(--main-color);
+  }
+  &:focus .menu-svg-buy {
+    fill: var(--main-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-svg-buy {
+  transition-property: fill;
+  transition: var(--cub);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
