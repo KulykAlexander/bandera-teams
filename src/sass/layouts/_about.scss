@@ -61,7 +61,7 @@
   }
   @include tablet {
     width: 335px;
-    height: 350px;
+    height: 330px;
     border-radius: 165.879px;
     margin: 0px;
     margin-bottom: 72px;
@@ -88,18 +88,20 @@
   position: absolute;
   top: 22px;
   // right: 25%;
-
-  width: 278px;
-  height: 278px;
-
+  display: block;
+  width: 277px;
+  height: 277px;
+  border-radius: 1038.58px;
   // transform: translate(-50% -50%);
   @include tablet {
     width: 335px;
-    height: 350px;
+    height: 330px;
+    border-radius: 1228.96px;
   }
   @include desktop {
     width: 490px;
     height: 490px;
+    border-radius: 1852.2px;
   }
 }
 
