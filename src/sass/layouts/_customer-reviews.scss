@@ -16,6 +16,7 @@
   flex-direction: column;
   padding-top: 186px;
   padding-bottom: 774px;
+
   background-image: url(../images/reviewers/ice-cream-bg-1x.jpg);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -31,6 +32,8 @@
     padding-top: 456px;
     padding-bottom: 207px;
   }
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customer-reviews-list {
   display: flex;
