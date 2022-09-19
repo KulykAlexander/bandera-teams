@@ -1,3 +1,239 @@
-.hero-container{
-    background-color: #84A278;
+@media screen and (max-width: 767px) {
+  .hero-points-list {
+    display: none;
+  }
+  .hero-text {
+    display: none;
+  }
+  .hero-ice-cream-plate {
+    display: none;
+  }
+  .hero-arrow-svg {
+    display: none;
+  }
+}
+.hero-section {
+  position: relative;
+  background-color: #84a278;
+  width: 100%;
+  height: 453px;
+  background-image: url(../images/hero/Frame-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-section {
+    background-image: url(../images/hero/Frame-mobile@2x.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-image: url(../images/hero/Frame-tablet@2x.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-section {
+    background-image: url(../images/hero/Frame-desctop@2x.png);
+  }
+}
+
+.hero__title {
+  max-width: 247px;
+  padding-top: 61px;
+  margin-bottom: 32px;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.hero-title-span {
+  font-size: 34px;
+}
+.hero-button-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-button-list__link1 {
+  padding: 5px 12px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  &:hover {
+    border: solid #0a8817;
+  }
+    &:focus {
+      border: solid #0a8817;
+      color: #fcfcfc;
+    }
+  }
+
+.hero-button-list__link2 {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #f8d24e;
+    &:hover {
+        color: #0a8817;
+      }
+    
+      &:focus {
+        color: #fcfcfc;
+      }
+}
+.hero-ice-cream {
+  position: absolute;
+  top: 39.5%;
+  left: 11%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-ice-cream {
+    top: -16%;
+    left: 47.5%;
+  }
+  .hero-section {
+    height: 343px;
+  }
+  .hero-title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .hero-points-list {
+    margin-left: auto;
+  }
+  .hero-points-text {
+    display: block;
+  }
+  .hero-points-link {
+    display: block;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #131313;
+  }
+  .hero-points-text {
+    display: block;
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: #fcfcfc;
+  }
+  .hero-points-item {
+    width: 60px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  .hero__title {
+    max-width: 181px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    padding-top: 0;
+  }
+  .hero-title-span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 13px;
+  }
+
+  .hero-text {
+    margin-left: 185px;
+    margin-top: 68px;
+    max-width: 151px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .hero-ice-cream-plate {
+    position: absolute;
+    top: 180px;
+    left: 41.6px;
+    width: 152px;
+  }
+  .hero-arrow-svg {
+    margin-left: 180px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: 590px;
+  }
+  .hero-ice-cream {
+    top: -74px;
+  }
+  .ice-cream-img {
+  }
+  .hero-ice-cream-plate {
+    width: 225px;
+    top: 300px;
+    left: 17px;
+  }
+  .hero-text {
+    margin-left: 239px;
+    margin-top: 150px;
+    max-width: 200px;
+    font-size: 14px;
+  }
+  .hero-arrow-svg {
+    margin-left: 234px;
+  }
+  .hero__title {
+    max-width: 367px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  .hero-title-span {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  .hero-button-list__link1 {
+    padding: 12px 34px;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #131313;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+  }
+  .hero-button-list__link2 {
+    font-size: 14px;
+    padding-left: 12px;
+  }
+  .hero-points-link {
+    font-size: 46px;
+    line-height: 1.2;
+  }
+
+  .hero-points-text {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
