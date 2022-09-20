@@ -21,14 +21,20 @@
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-size: cover;
-    padding-bottom: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 939px;
+    @include mobile {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
     @include tablet {
       background-position: 50% 164px;
-      padding-bottom: 55px;
+      padding-bottom: 796px;
     }
     @include desktop {
       background-position: 50% 94px;
-      padding-bottom: 123px;
+      padding-bottom: 696px;
     }
   }
   &__list {
@@ -84,7 +90,7 @@
   right: 0;
   opacity: 0;
   animation-name: gallery;
-  animation-duration: 20s;
+  animation-duration: 25s;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-iteration-count: infinite;
 }
@@ -100,6 +106,6 @@
 .gallery__items:nth-child(4) {
   animation-delay: 15s;
 }
-// .gallery__items:nth-child(5) {
-//   animation-delay: 12s;
-// }
+.gallery__items:nth-child(5) {
+  animation-delay: 20s;
+}
