@@ -14,8 +14,8 @@
 .modal {
   // position: relative;
 
-  // opacity: 0;
-  // visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
   z-index: 30;
   position: fixed;
   top: 50%;
@@ -24,6 +24,8 @@
   width: 280px;
   max-height: 990px;
   padding: 28px;
+
+  // overflow: scroll;
 
   background-color: var(--modal-bg-color);
   border: 2px solid #f8d24e;

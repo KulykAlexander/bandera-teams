@@ -1,15 +1,14 @@
-<div class="overlay js-overlay-modal">
-  <div class="modal js-overlay-modal" data-modal="2">
-    <button type="button" class="modal-close btn js-modal-close">
-      <svg class="close-icon" width="20" height="20">
-        <use href="./images/icons.svg#icon-modal-close"></use>
-      </svg>
-    </button>
-    <h2 class="ingredients-titel">Chololate icecream</h2>
-    <div class="ingredients-card">
-      <div class="ingredients-circus"></div>
-      <div class="ingredients-image"></div>
-      <!-- <picture class="ingredients-img">
+<div class="modal" data-modal="2">
+  <button type="button" class="modal-close btn js-modal-close">
+    <svg class="close-icon" width="20" height="20">
+      <use href="./images/icons.svg#icon-modal-close"></use>
+    </svg>
+  </button>
+  <h2 class="ingredients-titel">Chololate icecream</h2>
+  <div class="ingredients-card">
+    <div class="ingredients-circus"></div>
+    <div class="ingredients-image"></div>
+    <!-- <picture class="ingredients-img">
         <source
           srcset="
             ./images/ingredients/ingredients.png    1x,
@@ -23,109 +22,103 @@
           height="141"
         />
       </picture> -->
-    </div>
-    <ul class="ingredients-components-list list">
-      <li>
-        <div class="ingredients-components">
-          <p class="ingredients-calc">320</p>
-          <p class="ingredients-name">kcal</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-components">
-          <p class="ingredients-calc">4g</p>
-          <p class="ingredients-name">Prote...</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-components">
-          <p class="ingredients-calc">8,2g</p>
-          <p class="ingredients-name">Fats</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-components">
-          <p class="ingredients-calc">40,4g</p>
-          <p class="ingredients-name">Carbs</p>
-        </div>
-      </li>
-    </ul>
-    <h3 class="ingredients-second-titel">Ingredients</h3>
-    <ul class="ingredients-compound-list list">
-      <li>
-        <div class="ingredients-compound">
-          <p class="ingredients-text">Milk</p>
-          <p class="ingredients-text">100ml</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-compound">
-          <p class="ingredients-text">Belgian chocolate</p>
-          <p class="ingredients-text">20g</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-compound">
-          <p class="ingredients-text">Cream</p>
-          <p class="ingredients-text">150 ml</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-compound">
-          <p class="ingredients-text">Cocoa powder</p>
-          <p class="ingredients-text">30g</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-compound">
-          <p class="ingredients-text">Sugar</p>
-          <p class="ingredients-text">40g</p>
-        </div>
-      </li>
-      <li>
-        <div class="ingredients-compound">
-          <p class="ingredients-text">Vanilla sugar</p>
-          <p class="ingredients-text">10g</p>
-        </div>
-      </li>
-    </ul>
-    <form class="ingredients-form">
-      <div class="ingredients-form-field">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder=" "
-          pattern="[A-Za-z0-9]{3,}"
-          required
-        />
-      </div>
-      <div class="ingredients-form-field">
-        <label for="phone">Phone</label>
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
-          placeholder=" "
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-          minlength="13"
-          maxlength="13"
-          required
-        />
-      </div>
-
-      <div class="ingredients-form-field">
-        <label for="comment">Comment</label>
-        <textarea
-          name="comment"
-          rows="4"
-          placeholder=" "
-          id="comment"
-        ></textarea>
-      </div>
-
-      <button type="submit" class="ingredients-btn btn">Submit</button>
-    </form>
   </div>
+  <ul class="ingredients-components-list list">
+    <li>
+      <div class="ingredients-components">
+        <p class="ingredients-calc">320</p>
+        <p class="ingredients-name">kcal</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-components">
+        <p class="ingredients-calc">4g</p>
+        <p class="ingredients-name">Prote...</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-components">
+        <p class="ingredients-calc">8,2g</p>
+        <p class="ingredients-name">Fats</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-components">
+        <p class="ingredients-calc">40,4g</p>
+        <p class="ingredients-name">Carbs</p>
+      </div>
+    </li>
+  </ul>
+  <h3 class="ingredients-second-titel">Ingredients</h3>
+  <ul class="ingredients-compound-list list">
+    <li>
+      <div class="ingredients-compound">
+        <p class="ingredients-text">Milk</p>
+        <p class="ingredients-text">100ml</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-compound">
+        <p class="ingredients-text">Belgian chocolate</p>
+        <p class="ingredients-text">20g</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-compound">
+        <p class="ingredients-text">Cream</p>
+        <p class="ingredients-text">150 ml</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-compound">
+        <p class="ingredients-text">Cocoa powder</p>
+        <p class="ingredients-text">30g</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-compound">
+        <p class="ingredients-text">Sugar</p>
+        <p class="ingredients-text">40g</p>
+      </div>
+    </li>
+    <li>
+      <div class="ingredients-compound">
+        <p class="ingredients-text">Vanilla sugar</p>
+        <p class="ingredients-text">10g</p>
+      </div>
+    </li>
+  </ul>
+  <form class="ingredients-form">
+    <div class="ingredients-form-field">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder=" "
+        pattern="[A-Za-z0-9]{3,}"
+        required
+      />
+    </div>
+    <div class="ingredients-form-field">
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder=" "
+        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+        minlength="13"
+        maxlength="13"
+        required
+      />
+    </div>
+
+    <div class="ingredients-form-field">
+      <label for="comment">Comment</label>
+      <textarea name="comment" rows="4" placeholder=" " id="comment"></textarea>
+    </div>
+
+    <button type="submit" class="ingredients-btn btn">Submit</button>
+  </form>
 </div>
