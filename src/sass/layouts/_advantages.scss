@@ -1,7 +1,9 @@
-.advantages {
+
+.advantages-container {
     padding-top: 42px;
     padding-bottom: 60px;
     background: #84A178;
+    
     @include tablet {
         padding-top: 48px;
         padding-bottom: 204px;
@@ -10,6 +12,7 @@
         padding-top: 60px;
         padding-bottom: 180px;
       }
+  
 }
 
 .visually-hidden {
