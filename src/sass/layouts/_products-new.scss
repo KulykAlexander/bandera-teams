@@ -223,6 +223,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 160px;
+    flex-direction: column;
     // row-gap: 160px;
   }
 }
