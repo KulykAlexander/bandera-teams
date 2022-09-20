@@ -21,14 +21,14 @@
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-size: cover;
-    padding-bottom: 75px;
+    padding-bottom: 939px;
     @include tablet {
       background-position: 50% 164px;
-      padding-bottom: 55px;
+      padding-bottom: 796px;
     }
     @include desktop {
       background-position: 50% 94px;
-      padding-bottom: 123px;
+      padding-bottom: 696px;
     }
   }
   &__list {
