@@ -1,4 +1,4 @@
-import './js/menu';
+// import './js/menu.js';
 // import './js/modal';
 // import './js/slider';
 // import './js/buy';
