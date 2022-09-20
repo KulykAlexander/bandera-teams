@@ -1,16 +1,16 @@
 
 .advantages-container {
     padding-top: 42px;
-    padding-bottom: 60px;
+    padding-bottom: 36px;
     background: #84A178;
     
     @include tablet {
         padding-top: 48px;
-        padding-bottom: 204px;
+        padding-bottom: 40px;
       }
       @include desktop {
         padding-top: 60px;
-        padding-bottom: 180px;
+        padding-bottom: 86px;
       }
   
 }
@@ -63,9 +63,9 @@
 
 .advatages-icon { 
     margin-bottom: 16px;
+    width: 50px;
 
     @include tablet {
-        width: 50px;
         margin-top: 0;
         margin-bottom: 32px;
       }
