@@ -1,12 +1,12 @@
 .footer {
-    background-color: #84a178;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
+
 .footer .container {
     width: 100%;
     top: 0;
     padding: 0;
+    background-color: #84a178;
 }
 
 .footer-box {
@@ -185,7 +185,6 @@
     color: #FCFCFC;
 
     @media screen and (min-width: 768px) {
-        font-weight: 700;
         font-size: 14px;
     }
 
@@ -199,12 +198,11 @@
     border-top: 1px solid #E1E1E1;
     padding-top: 16px;
     padding-bottom: 60px;
+    width: 100%;
     
     display: flex;
     text-align: center;
     justify-content: center; 
-
-    width: 100%;
     
     @media screen and (min-width: 768px) {
         padding-top: 14px;
@@ -214,6 +212,8 @@
     @media screen and (min-width: 1200px) {
         padding-top: 12px;
         padding-bottom: 12px;
+        width: 1167px;
+        margin: 0 auto;
     }
 }
 
@@ -224,7 +224,6 @@
     color: #7A7A7A;   
         
     @media screen and (min-width: 768px) {
-        font-weight: 700;
         line-height: 1.86;
         letter-spacing: 0.02em;
         width: 100%;   
