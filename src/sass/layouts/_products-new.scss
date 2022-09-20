@@ -170,7 +170,7 @@
 
   color: #131313;
   margin-bottom: auto;
-  overflow-x: scroll;
+  // overflow-x: scroll;
 
   @include tablet {
     font-size: 14px;
@@ -223,7 +223,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 160px;
-    row-gap: 160px;
+    flex-direction: column;
+    // row-gap: 160px;
   }
 }
 
