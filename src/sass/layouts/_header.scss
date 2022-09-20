@@ -1,14 +1,18 @@
-.header .container {
+.header {
   width: 100%;
   position: fixed;
   z-index: 2;
   top: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   background-color: var(--main-bg-color);
+}
+.header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
-
   @media screen and (min-width: 768px) {
     padding: 20px 32px;
   }
