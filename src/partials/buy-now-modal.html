@@ -1,0 +1,77 @@
+<div class="backdrop">
+  <div class="modal">
+    <button type="button" class="modal-close btn">
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-titel">Buy now</h2>
+    <ul class="buy-now-list list">
+      <li class="buy-now-item">
+        <div class="buy-now-card">
+          <picture class="buy-now-img">
+            <source
+              srcset="
+                ./images/buy-now/ice-cream.webp    1x,
+                ./images/buy-now/ice-cream-2x.webp 2x
+              "
+            />
+            <source
+              srcset="
+                ./images/buy-now/ice-cream.jpg    1x,
+                ./images/buy-now/ice-cream-2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/buy-now/ice-cream.jpg"
+              alt="ice cream"
+              width="132"
+              height="132"
+            />
+          </picture>
+          <p class="buy-now-text">ice cream</p>
+        </div>
+      </li>
+      <li class="buy-now-item"></li>
+      <li class="buy-now-item"></li>
+    </ul>
+    <form class="buy-now-form">
+      <div class="buy-now-form-field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+          pattern="[A-Za-z0-9]{3,}"
+          required
+        />
+      </div>
+      <div class="buy-now-form-field">
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder=" "
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          minlength="13"
+          maxlength="13"
+          required
+        />
+      </div>
+
+      <div class="buy-now-form-field">
+        <label for="comment">Comment</label>
+        <textarea
+          name="comment"
+          rows="4"
+          placeholder=" "
+          id="comment"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="buy-now-btn btn">Submit</button>
+    </form>
+  </div>
+</div>
