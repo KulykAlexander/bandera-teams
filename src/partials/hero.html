@@ -36,6 +36,34 @@
         height="10px"
       ></use>
     </svg>
+    <picture class="Frame-picture">
+      <source
+        srcset="
+          ./images/hero/Frame-desctop.png    1x,
+          ./images/hero/Frame-desctop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/hero/Frame-tablet.png    1x,
+          ./images/hero/Frame-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <source
+        srcset="
+          ./images/hero/Frame-mobile.png    1x,
+          ./images/hero/Frame-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+      <img class="Frame-img" src="./images/hero/Frame-mobile.png" alt="Frame" />
+    </picture>
     <picture class="hero-ice-cream">
       <source
         srcset="
