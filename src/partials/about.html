@@ -4,26 +4,34 @@
     <h2 class="about-title">how it’s made?</h2>
     <div class="about-decoration">
       <div class="about-photo">
-        <picture class="about-photo-cow">
+
+        <picture>
           <source
             srcset="
-              ./images/about/cow-pc-1x-min.png 1x,
-              ./images/about/cow-pc-2x-min.png 2x
-            "
+              ./images/about/cow-pc-1x-min.jpg 1x,
+              ./images/about/cow-pc-2x-min.jpg 2x"
             media="(min-width:1200px)" />
           <source
             srcset="
-              ./images/about/cow-tab-1x-min.png 1x,
-              ./images/about/cow-tab-2x-min.png 2x
+
+              ./images/about/cow-tab-1x-min.jpg 1x,
+              ./images/about/cow-tab-2x-min.jpg 2x
+
+              
             "
             media="(min-width:768px)" />
           <source
             srcset="
-              ./images/about/cow-mob-1x-min.png 1x,
-              ./images/about/cow-mob-2x-min.png 2x
+              ./images/about/cow-mob-1x-min.jpg 1x,
+              ./images/about/cow-mob-2x-min.jpg 2x
             "
-            media="(max-width:767px)" />
-          <img src="./images/about/cow-mob-min.png" alt="Cow" width="278"
+            media="media=(max-width:767px)" />
+          <img
+            class="about-photo-cow"
+            src="./images/about/cow-min.jpg"
+            alt="Cow"
+            width="278"
+ 
         /></picture>
       </div>
       <div class="about-information">
@@ -45,9 +53,11 @@
           Read more
           <span
             ><svg class="about-btn-arrow" width="12" height="12">
+
               <use href="./images/icons.svg#icon-btn-arrow"></use>
             </svg>
           </span>
+
         </button>
       </div>
     </div>
