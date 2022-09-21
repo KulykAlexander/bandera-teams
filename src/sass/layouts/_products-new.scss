@@ -113,15 +113,15 @@
 .product-card {
   width: 280px;
   height: 420px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   border-radius: 24px;
   padding-top: 123px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 20px;
-  // align-items: center;
+  align-items: center;
   text-align: center;
   position: relative;
   z-index: 1;
