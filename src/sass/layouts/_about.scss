@@ -65,20 +65,18 @@
   }
   @include tablet {
     width: 335px;
-
     height: 330px;
-
     border-radius: 165.879px;
     margin: 0px;
-    margin-bottom: 72px;
-    margin-top: 79px;
+    // margin-bottom: 72px;
+    // margin-top: 79px;
   }
   @include desktop {
     width: 490px;
     height: 490px;
     border-radius: 250px;
-    margin-bottom: 82px;
-    margin-top: 89px;
+    // margin-bottom: 82px;
+    // margin-top: 89px;
   }
   background: linear-gradient(
       0deg,
@@ -194,6 +192,8 @@
     align-items: flex-end;
     column-gap: 32px;
     align-items: center;
+    padding-bottom: 62px;
+    padding-top: 30px;
   }
   @include desktop {
     column-gap: 0;
