@@ -1,11 +1,22 @@
 .section-contacts {
   background-color: #84a178;
+  max-width: 1200px;
+}
+.contacts-container{
+  padding: 0 15px;
 }
 .contacts {
   list-style: none;
+  @media screen and(max-width:767px) {
+   margin-top: -410px;
+  }
   @media screen and(min-width:768px) {
     display: flex;
     gap: 16px;
+    margin-top: -330px;
+  }
+  @media screen and(min-width:1200px){
+    margin-top: -160px;
   }
 }
 .contacts-list {
