@@ -172,6 +172,19 @@
   top: -110;
   left: 40;
 }
+
+.card__ice::before {
+  background-image: url('../images/products-new/ice/ice-desk@1x.png');
+}
+
+.card__coffee::before {
+  background-image: url('../images/products-new/coffee/coffee-desk@1x.png');
+}
+
+.card__milk::before {
+  background-image: url('../images/products-new/milk/milk-desk@1x.png');
+}
+
 .card__name {
   font-family: inherit;
   font-style: normal;
