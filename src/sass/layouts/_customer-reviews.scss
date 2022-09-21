@@ -15,12 +15,15 @@
   display: flex;
   flex-direction: column;
   margin-top: -859px;
+  padding-bottom: 394px;
 
   @media screen and (min-width: 768px) {
     margin-top: -736px;
+    padding-bottom: 383px;
   }
   @media screen and (min-width: 1200px) {
     margin-top: -568px;
+    padding-bottom: 207px;
   }
 }
 .customer-reviews-list {
