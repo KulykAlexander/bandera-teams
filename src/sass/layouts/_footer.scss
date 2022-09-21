@@ -1,5 +1,5 @@
 .footer {
-    font-weight: 700;   
+    font-weight: 700; 
 }
 
 .footer .container {
@@ -15,9 +15,9 @@
     padding-right: 20px;
 
     @media screen and (min-width: 768px) {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         
         padding-left: 32px;
         padding-right: 32px;
@@ -88,16 +88,6 @@
     @media screen and (min-width: 1200px) {
         font-size: 58px;
         line-height: 1.22;  
-    }
-}
-
-.footer-soc-contact {
-    @media screen and (min-width: 768px) {
-        margin-top: 68px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-top: auto;
-        align-self: flex-start;
     }
 }
 
