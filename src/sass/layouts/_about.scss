@@ -2,12 +2,12 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
+  background-color: #84a178;
 }
 
 .about.section {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #84a178;
 }
 .about-pre-title {
   margin-bottom: 12px;
@@ -104,14 +104,12 @@
     width: 335px;
     height: 330px;
     border-radius: 1228.96px;
-
   }
   @include desktop {
     width: 490px;
     height: 490px;
 
     border-radius: 1852.2px;
-
   }
 }
 
