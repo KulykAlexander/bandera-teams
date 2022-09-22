@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background-color: var(--main-bg-color);
+  // background-color: var(--main-bg-color);
 }
 .header .container {
   display: flex;
@@ -19,6 +19,7 @@
   @media screen and (min-width: 1200px) {
     padding: 8px 16px;
   }
+  background-color: var(--main-bg-color);
 }
 .header-logo {
   margin-right: auto;
