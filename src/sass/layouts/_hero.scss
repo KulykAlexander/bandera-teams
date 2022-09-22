@@ -45,6 +45,7 @@
 }
 .frame-picture {
   position: absolute;
+  min-width: 320px;
   top: 88%;
 }
 
@@ -61,11 +62,12 @@
   .hero-arrow-svg {
     display: none;
   }
-
-  .hero-btn-products {
+  .hero-button-list {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 8px;
+  }
+  .hero-btn-products {
     width: 62px;
     height: 24px;
 
@@ -76,7 +78,7 @@
     line-height: 1.25;
     cursor: pointer;
 
-    // text-align: center;
+    text-align: center;
 
     color: #131313;
 
@@ -101,14 +103,15 @@
   }
 
   .hero-button-list__link2 {
+    width: 82px;
+    height: 24px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-weight: 600;
     font-size: 8px;
     line-height: 1.25;
-    display: flex;
-    align-items: center;
+
     text-align: center;
     text-decoration-line: underline;
     color: #f8d24e;
@@ -145,26 +148,6 @@
   }
 } */
 
-// .hero-button-products {
-//   padding: 5px 12px;
-//   font-weight: 600;
-//   font-size: 8px;
-//   line-height: 1.25;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-//   color: #131313;
-//   border: 2px solid #f8d24e;
-//   border-radius: 8px;
-//   &:hover {
-//     border: solid #0a8817;
-//   }
-//   &:focus {
-//     border: solid #0a8817;
-//     color: #fcfcfc;
-//   }
-// }
-
 @media screen and (min-width: 768px) {
   .hero-ice-cream {
     top: -21.5%;
@@ -186,7 +169,11 @@
     width: 768px;
     margin-top: 88px;
   }
-
+  .hero-button-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   .hero-title-wrapper {
     display: flex;
     align-items: center;
@@ -250,9 +237,9 @@
   }
 
   .hero-btn-products {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     width: 62px;
     height: 24px;
 
@@ -263,7 +250,7 @@
     line-height: 1.25;
     cursor: pointer;
 
-    // text-align: center;
+    text-align: center;
 
     color: #131313;
 
@@ -288,14 +275,16 @@
   }
 
   .hero-button-list__link2 {
+    width: 82px;
+    height: 24px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-weight: 600;
     font-size: 8px;
     line-height: 1.25;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     text-align: center;
     text-decoration-line: underline;
     color: #f8d24e;
@@ -318,52 +307,6 @@
   }
   .hero-title-wrapper {
     margin-top: 20px;
-  }
-  .hero-ice-cream {
-    top: -72px;
-  }
-  .hero-ice-cream-plate {
-    width: 225px;
-    top: 50%;
-    left: 2%;
-  }
-  .frame-picture {
-    min-width: 1200px;
-
-    top: 33%;
-  }
-  .hero-text {
-    margin-left: 239px;
-    margin-top: 109px;
-    max-width: 200px;
-    font-size: 14px;
-  }
-  .hero-arrow-svg {
-    margin-left: 234px;
-  }
-  .hero__title {
-    max-width: 367px;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 1.26;
-  }
-  .hero-title-span {
-    font-size: 38px;
-    line-height: 1.26;
-  }
-
-  .hero-button-list__link2 {
-    font-size: 14px;
-    padding-left: 12px;
-  }
-  .hero-points-link {
-    font-size: 46px;
-    line-height: 1.2;
-  }
-
-  .hero-points-text {
-    font-size: 14px;
-    line-height: 1.21;
   }
 
   .hero-btn-products {
@@ -404,6 +347,8 @@
     }
   }
   .hero-button-list__link2 {
+    width: 154px;
+    height: 40px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -424,5 +369,55 @@
     &:focus {
       color: #fcfcfc;
     }
+  }
+  .hero-ice-cream {
+    top: -72px;
+  }
+  .hero-ice-cream-plate {
+    width: 225px;
+    top: 50%;
+    left: 2%;
+  }
+  .frame-picture {
+    min-width: 1200px;
+
+    top: 33%;
+  }
+  .hero-text {
+    margin-left: 239px;
+    margin-top: 109px;
+    max-width: 200px;
+    font-size: 14px;
+  }
+  .hero-arrow-svg {
+    margin-left: 234px;
+  }
+  .hero__title {
+    max-width: 367px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  .hero-title-span {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+
+  .hero-button-list {
+    gap: 34px;
+  }
+
+  .hero-button-list__link2 {
+    font-size: 14px;
+    // padding-left: 12px;
+  }
+  .hero-points-link {
+    font-size: 46px;
+    line-height: 1.2;
+  }
+
+  .hero-points-text {
+    font-size: 14px;
+    line-height: 1.21;
   }
 }
