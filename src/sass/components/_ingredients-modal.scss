@@ -1,4 +1,12 @@
-.ingredients-titel {
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.ingredients {
+  overflow-y: scroll;
+  height: 100%;
+}
+.ingredients .ingredients-titel {
   margin-bottom: 20px;
   font-family: 'Seymour One', sans-serif;
   font-size: 16px;
